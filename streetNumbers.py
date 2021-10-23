@@ -1,18 +1,16 @@
 import numpy as np
+from math import ceil, floor
+from functools import reduce
 
 
 def run():
+    a = range(18, 90)
     try:
-        houses = int(input(' Enter a positive integer '))
-        if houses < 3:
-            print(-1)
-        else:
-            #neighborhood = [i for i in range(1, houses)]
-            neighborhood = np.arange(houses)
-            print(neighborhood[0:houses:2])
+        for i in range(18, 90, 6):
+            print('De', i, 'a', i+5, 'años')
 
-    except TypeError:
-        print(' Error!')
+    except Exception as e:
+        print(e)
 
 
 if __name__ == '__main__':
