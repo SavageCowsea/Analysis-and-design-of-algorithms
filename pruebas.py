@@ -1,18 +1,4 @@
-import itertools
-
-
-def run():
-    solutions = ((itertools.permutations([0, 1, 4, 3], 4)))
-    if 'n.a' in next(solutions) == False:
-        print('fml')
-
-    for i in range(0):
-        print('holi')
-
-
-if __name__ == '__main__':
-    iter = 1
-
-    for _ in range(iter):
-
-        run()
+for i in range(1, 4):
+    for j in range(1, 5):
+        if (i+2*j+3) == 12 and i < j:
+            print(i, j)
